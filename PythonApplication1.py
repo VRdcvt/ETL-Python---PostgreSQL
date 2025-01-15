@@ -179,7 +179,7 @@ def insert_into_REPORT ():
 
 def main():
     # Read script where wich creations all tables
-    with open(r'C:\Users\Vitaly\Desktop\PythonApplication1\DDL.sql', 'r') as file:
+    with open(r'ПУТЬ К ФАЙЛУ DDL.sql', 'r') as file:  # ВАЖНО УКАЗАТЬ ПУТЬ К ФАЙЛУ DDL.sql
         sql_script = file.read()
     # Handling errors when create tables
     try:
@@ -201,10 +201,10 @@ def main():
 
 
     # Download data from excell
-    excel_file = f'C:\\Users\\Vitaly\\Desktop\\fraud_detection\\transactions_0{v_processed_id}052020.xlsx'
+    excel_file = f'C:\\Users\\Vitaly\\Desktop\\fraud_detection\\transactions_0{v_processed_id}052020.xlsx' # ВАЖНО УКАЗАТЬ ПУТЬ К ФАЙЛУ transactions_01052020.xlsx, вместо цифры "1" пишем {v_processed_id}
     sheet_name = f'0{v_processed_id}052020'
 
-    full_path = Path(rf'C:\Users\Vitaly\Desktop\fraud_detection\transactions_0{v_processed_id}052020.xlsx')
+    full_path = Path(rf'C:\Users\Vitaly\Desktop\fraud_detection\transactions_0{v_processed_id}052020.xlsx') # ВАЖНО УКАЗАТЬ ПУТЬ К ФАЙЛУ transactions_01052020.xlsx, вместо цифры "1" пишем {v_processed_id}
     file_name = full_path.name
 
     # Handling errors when reading an Excel file
