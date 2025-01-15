@@ -9,8 +9,8 @@ BEGIN
 	    WITH RankedTransactions AS (
 	        SELECT passport_num, 
 	               last_name,
-				   first_name,
-				   patronymic,
+		       first_name,
+		       patronymic,
 	               phone,
 	               card_num,
 	               trans_date,
